@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
+  replicas : 3
   revisionHistoryLimit: 3
   progressDeadlineSeconds: 30
   selector:
@@ -13,7 +14,6 @@ spec:
       labels:
         app: guestbook-ui
     spec:
-      replicas : 3
       containers:
       - name: guestbook-ui
         image: nginx
