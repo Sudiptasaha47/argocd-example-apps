@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: guestbook-ui
-        image: nginx
+        image: us-docker.pkg.dev/google-samples/containers/gke/gb-frontend:v5
         resources:
           requests:
             cpu: 100m
